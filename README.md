@@ -2,6 +2,8 @@
 
 A web-based Nostr client that displays notes sorted by their Proof of Work (PoW) difficulty.
 
+[Example deployment](https://storage.googleapis.com/sov-eng-nostr-pow-hosting/index.html)
+
 ## Features
 
 - **PoW Calculation**: Automatically calculates the PoW difficulty for each note based on leading zeros in the note ID

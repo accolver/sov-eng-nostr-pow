@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostr PoW Client</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🔥 Nostr PoW Client</h1>
+        <p>Notes sorted by Proof of Work difficulty</p>
+      </header>
+
+      <div class="controls">
+        <button id="connectBtn" class="btn primary">Connect to Relays</button>
+        <button id="refreshBtn" class="btn secondary" disabled>
+          Refresh Notes
+        </button>
+        <div class="status" id="status">Ready to connect</div>
+      </div>
+
+      <div class="filters">
+        <label for="minPow">Minimum PoW:</label>
+        <input type="number" id="minPow" value="0" min="0" max="32" />
+        <label for="maxNotes">Max Notes:</label>
+        <input type="number" id="maxNotes" value="50" min="10" max="200" />
+      </div>
+
+      <div class="notes-container">
+        <div id="loading" class="loading hidden">Loading notes...</div>
+        <div id="notes" class="notes"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
